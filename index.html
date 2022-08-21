@@ -64,19 +64,22 @@
                 <!-- Selected Players Part.  -->
                 <div class="bg-slate-600 p-3 border-2 border-white">
                     <h1 class="text-xl text-center font-bold">Selected Players</h1>
+                    <ul>
+                        
+                    </ul>
                 </div>
                 <br>
 
                 <!-- Budget Part.  -->
                 <div class="bg-slate-600 text-center border-2 border-white">
                     <h1 class="text-xl font-bold">Calculate Budget</h1>
-                    <h1>Per Player: <input type="number" name="" id="" class="text-black m-2"></h1>
-                    <button class="font-bold bg-blue-600 px-12 py-1 m-2">Select</button>
-                    <h1>Players Total Expences: <span>0</span></h1>
-                    <h1>Manager: <input type="number" name="" id="" class="text-black m-2"></h1>
-                    <h1>Coach: <input type="number" name="" id="" class="text-black m-2"></h1>
-                    <button class="font-bold bg-blue-600 px-12 py-1 m-2">Calculate Total</button>
-                    <h1> Total: <span class="text-red-400">0</span></h1>
+                    <h1>Per Player: $ <input type="number" name="" id="per-player" class="text-black m-2"></h1>
+                    <button class="font-bold bg-blue-600 px-12 py-1 m-2" id="btn-calculate">Calculate</button>
+                    <h1>Players Total Expences: $ <span id="players-total-expences">0</span></h1>
+                    <h1>Manager: <input type="number" name="" id="for-manager" class="text-black m-2"></h1>
+                    <h1>Coach: <input type="number" name="" id="for-coach" class="text-black m-2"></h1>
+                    <button class="font-bold bg-blue-600 px-12 py-1 m-2" id="btn-total">Calculate Total</button>
+                    <h1> Total: $ <span class="text-red-400" id="total">0</span></h1>
                 </div>
             </div>
         </div>
@@ -153,8 +156,8 @@
         </div>
     </footer>
 
-
     <!-- JS File Link. -->
+    <script src="js/utilities.js"></script>
     <script src="js/teamSelect.js"></script>
     <script src="js/budget.js"></script>
 </body>
