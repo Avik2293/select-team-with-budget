@@ -2,8 +2,6 @@
 
 document.getElementById('btn-calculate').addEventListener('click', function () {
 
-    // const totalPlayer = getInputFieldValueById('total-income');
-
     const perPlayer = getInputFieldValueById('per-player');
 
     if (isNaN(perPlayer)) {
@@ -15,7 +13,7 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
         return;
     }
 
-    const playerTotalExpences = perPlayer * 5;
+    const playerTotalExpences = perPlayer * playerList.length;
 
     setTextElementValueById('players-total-expences', playerTotalExpences);
 })
